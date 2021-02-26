@@ -21,16 +21,17 @@ Proposing an affiliated package
 *These instructions are for affiliated package authors*
 
 Once you believe your package is ready to be reviewed by the
-PlanetaryPy Project, open a pull request to the `planetarypy.github.io
-repository <https://github.com/planetarypy/planetarypy.github.io>`_,
+PlanetaryPy Project, open a pull request to the `src branch of the
+planetarypy.github.io repository
+<https://github.com/planetarypy/planetarypy.github.io/tree/src>`_,
 modifying the ``data/registry.json`` file to add details about your
 own package. If you are not comfortable with git, you can do this
 by using the 'Edit this File' button (that looks like a pencil which
 is to the the upper right of the document, next to the trash can
 icon) on the webpage for the `registry.json
-<https://github.com/planetarypy/planetarypy.github.io/data/registry.json>`_ 
-file.  If you get a message saying **You need to fork this repository to
-propose changes** then click on the green button to confirm the
+<https://github.com/planetarypy/planetarypy.github.io/blob/src/data/registry.json>`_
+file.  If you get a message saying **You need to fork this repository
+to propose changes** then click on the green button to confirm the
 forking:
 
 .. image:: /images/propose_fork.png
