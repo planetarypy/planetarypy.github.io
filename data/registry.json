@@ -1,0 +1,70 @@
+{
+	"criteria": {
+		"functionality": {
+			"general package": "brightgreen",
+    	    "specialized package": "brightgreen",
+    	    "out of scope": "red"
+		},
+		"ecointegration": {
+			"good": "brightgreen",
+    	    "partial": "orange",
+    	    "none": "red"
+		},
+		"documentation": {
+			"good": "brightgreen",
+    	    "partial": "orange",
+    	    "insufficient": "red"
+		},
+		"testing": {
+			"good": "brightgreen",
+    	    "partial": "orange",
+    	    "insufficient": "red"
+		},
+		"devstatus": {
+			"good": "brightgreen",
+    	    "heavy development": "orange",
+    	    "functional but low activity": "orange",
+    	    "functional but unmaintained": "orange",
+    	    "nonfunctional": "red"
+		},
+		"pythonversion": "3.6"
+	},
+    "packages": [
+        {
+            "name": "SpiceyPy",
+            "maintainer": "annex@jhu.edu",
+            "home_url": "http://spiceypy.readthedocs.org",
+            "repo_url": "https://github.com/AndrewAnnex/SpiceyPy",
+            "pypi_name": "spiceypy",
+            "description": "SpiceyPy is a Python wrapper for the NAIF C SPICE Toolkit.",
+            "image": null,
+            "review": {
+                "functionality": "General package",
+                "ecointegration": "Good",
+                "documentation": "Good",
+                "testing": "Good",
+                "devstatus": "Good",
+                "pythonver": "3.6",
+                "last-updated": "2021-01-27"
+            }
+        },
+		{
+            "name": "pvl",
+            "maintainer": "pvl Developers",
+            "home_url": "https://pvl.readthedocs.io",
+            "repo_url": "https://github.com/planetarypy/pvl",
+            "pypi_name": "pvl",
+            "description": "Python implementation of a PVL (Parameter Value Language) library.",
+            "image": null,
+            "review": {
+                "functionality": "General package",
+                "ecointegration": "Good",
+                "documentation": "Good",
+                "testing": "Good",
+                "devstatus": "Good",
+                "pythonver": "3.6",
+                "last-updated": "2021-01-22"
+            }
+        }
+    ]
+}
