@@ -1,4 +1,4 @@
-Sitemap: https://planetarypy.github.io/sitemapindex.xml
+Sitemap: https://planetarypy.org/sitemapindex.xml
 
 User-Agent: *
-Host: planetarypy.github.io
+Host: planetarypy.org
