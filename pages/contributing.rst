@@ -130,9 +130,9 @@ their comments). In order to merge a PR, it must satisfy these conditions:
 3. If the PR has been open for 48 hours without approval or comment, then it
    may be merged without any approvals.
 
-Unless that file is the data/registry.json file.  That is the cannonical list of
-PlanetaryPy packages, and PRs to that file—and that file only—have these 
-requirements:
+**Unless** that file is the ``data/registry.json`` file.  That is
+the cannonical list of PlanetaryPy packages, and PRs to that file—and
+that file only—have these more restrictive requirements:
 
 1. Have been open for 24 hours.
 2. Have two approvals.
