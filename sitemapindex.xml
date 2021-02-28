@@ -7,14 +7,14 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://planetarypy.org/categories/cat_package.xml</loc>
-  <lastmod>2021-02-28T19:36:00Z</lastmod>
+  <lastmod>2021-02-28T19:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://planetarypy.org/rss.xml</loc>
-  <lastmod>2021-02-28T19:36:00Z</lastmod>
+  <lastmod>2021-02-28T19:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://planetarypy.org/sitemap.xml</loc>
-  <lastmod>2021-02-28T19:36:00Z</lastmod>
+  <lastmod>2021-02-28T19:37:00Z</lastmod>
  </sitemap>
 </sitemapindex>
