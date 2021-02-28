@@ -970,7 +970,13 @@ FEED_LINKS_APPEND_QUERY = False
 
 # A HTML fragment describing the license, for the sidebar.
 # (translatable)
-LICENSE = ""
+LICENSE = '''<a rel="license"
+ href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative
+ Commons License" style="border-width:0"
+ src="https://licensebuttons.net/l/by-sa/4.0/80x15.png" /></a> This work
+ is licensed under a <a rel="license"
+ href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+ Attribution-ShareAlike 4.0 International License</a>.'''
 # I recommend using the Creative Commons' wizard:
 # https://creativecommons.org/choose/
 # LICENSE = """
@@ -981,11 +987,15 @@ LICENSE = ""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = '''Contents &copy; {date}
+CONTENT_FOOTER = '''<div class="small">Contents &copy; {date}
  <a href="/technical-committee/">PlanetaryPy Technical Committee</a>
- - Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a>
- {license}
- <div style="text-align: right;"><a href="/archive.html">News Archive</a>
+ - Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a></div>
+ <div class="small pb-3">{license}</div>
+ <div class="small" style="text-align: center"><a
+ href="https://github.com/planetarypy/planetarypy.github.io/issues/new">Issues
+ with the website?</a> - <a href="/contributing/">Contribute to the
+ site</a></div>
+ <div style="text-align: right"><a href="/archive.html">News Archive</a>
   - <a href="/rss.xml">RSS feed</a></div>'''
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
@@ -1008,7 +1018,7 @@ CONTENT_FOOTER_FORMATS = {
             "email": BLOG_EMAIL,
             "author": BLOG_AUTHOR,
             "date": time.gmtime().tm_year,
-            "license": LICENSE
+            "license": LICENSE,
         }
     )
 }
