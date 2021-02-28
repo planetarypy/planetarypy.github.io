@@ -12,7 +12,7 @@ This document describes the procedure for proposing, reviewing, and
 making a decision about PlanetaryPy-affiliated packages. This is
 meant as a record of the PlanetaryPy procedure and eventually we'll
 have more detailed instructions on proposing an affiliated package,
-like `Astropy does <http://www.astropy.org/affiliated/index.html>`_.
+like `Astropy does <https://www.astropy.org/affiliated/index.html>`_.
 
 
 Proposing an affiliated package

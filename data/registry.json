@@ -33,7 +33,7 @@
         {
             "name": "SpiceyPy",
             "maintainer": "annex@jhu.edu",
-            "home_url": "http://spiceypy.readthedocs.org",
+            "home_url": "https://spiceypy.readthedocs.org",
             "repo_url": "https://github.com/AndrewAnnex/SpiceyPy",
             "pypi_name": "spiceypy",
             "description": "SpiceyPy is a Python wrapper for the NAIF C SPICE Toolkit.",

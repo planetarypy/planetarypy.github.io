@@ -25,7 +25,7 @@ If you're a Python user, we have a listing of PlanetaryPy `Affiliated
 Packages <packages/>`_ that show good coding practices
 and good community practices.  We're also working on developing a
 core `planetarypy` library.  The `OpenPlanetary
-<http://openplanetary.org>`_ python Slack channel is a great place
+<https://www.openplanetary.org/>`_ python Slack channel is a great place
 to engage with a community of other planetary Python users.
 
 If you're a Python developer looking for ways to contribute to the
