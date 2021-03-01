@@ -1,16 +1,14 @@
 on:
-  pull_request:
+  push:
     branches:
       - src
 
 jobs:
   nikola_build:
     runs-on: ubuntu-latest
-    name: 'Nikola Build Only'
+    name: 'Deploy Nikola to GitHub Pages'
     steps:
     - name: Check out
       uses: actions/checkout@v2
-    - name: Build Nikola
+    - name: Build and Deploy Nikola
       uses: getnikola/nikola-action@v3
-      with:
-        dry_run: true
