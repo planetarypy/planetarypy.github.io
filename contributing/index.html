@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contributing | PlanetaryPy</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../rss.xml">
+<link rel="canonical" href="https://planetarypy.org/contributing/">
+<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><meta name="author" content="PlanetaryPy Technical Committee">
+<meta property="og:site_name" content="PlanetaryPy">
+<meta property="og:title" content="Contributing">
+<meta property="og:url" content="https://planetarypy.org/contributing/">
+<meta property="og:description" content="Contributions and corrections to the PlanetaryPy webpage are welcome, and they are
+greatly appreciated! Every little bit helps, and credit will always be given.
+The PlanetaryPy webpage uses the Nikola">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-02-27T12:07:44-08:00">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../">
+
+            <span id="blog-title">PlanetaryPy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../packages/" class="nav-link">Packages</a>
+                </li>
+<li class="nav-item">
+<a href="../news/" class="nav-link">News</a>
+                </li>
+<li class="nav-item">
+<a href="../technical-committee/" class="nav-link">Committee</a>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right"><li class="nav-item">
+<a href="https://github.com/planetarypy" class="nav-link">GitHub Repo</a>
+
+                
+                
+                
+            </li></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Contributing</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Contributions and corrections to the PlanetaryPy webpage are welcome, and they are
+greatly appreciated! Every little bit helps, and credit will always be given.</p>
+<p>The PlanetaryPy webpage uses the <a class="reference external" href="https://getnikola.com/">Nikola Static Site Generator</a> which means that the "source" of the
+webpages are found not in the <code class="docutils literal">master</code> branch of the
+<a class="reference external" href="https://github.com/planetarypy/planetarypy.github.io">planetarypy.github.io</a> repo, but
+in the <a class="reference external" href="https://github.com/planetarypy/planetarypy.github.io/tree/src">src branch</a>.</p>
+<p>So to make contributions or corrections, you must first fork the repo, and your
+changes must be PRs to the <code class="docutils literal">src</code> branch, not the <code class="docutils literal">master</code> branch.</p>
+<p>You can contribute in many ways:</p>
+<div class="section" id="types-of-contributions">
+<h2>Types of Contributions</h2>
+<div class="section" id="report-problems-or-ask-for-features-via-issues">
+<h3>Report Problems or Ask for Features via Issues</h3>
+<p>We want to hear from you!  You can report issues or typos, ask for new features,
+or just raise issues or concerns via logging an <a class="reference external" href="https://github.com/planetarypy/planetarypy.github.io/issues">Issue via our
+GitHub repo</a>.</p>
+</div>
+<div class="section" id="fix-bugs-or-implement-features">
+<h3>Fix Bugs or Implement Features</h3>
+<p>Look through the GitHub Issues for bugs to fix or feautures to implement.
+If anything looks tractable to you, work on it.  Most (if not all) PRs should
+be based on an Issue, so if you're thinking about doing some coding on a topic
+that isn't covered in an Issue, please author one so you can get some feedback
+while you work on your PR.</p>
+<p>You can either just use the GitHub web interface for small PRs to the <code class="docutils literal">src</code> branch,
+or you can do more substantial work by working locally (detailed below).</p>
+</div>
+<div class="section" id="submit-feedback">
+<h3>Submit Feedback</h3>
+<p>The best way to send feedback is to file an <a class="reference external" href="https://github.com/planetarypy/planetarypy.github.io/issues">Issue</a>.</p>
+</div>
+</div>
+<div class="section" id="get-started">
+<h2>Get Started!</h2>
+<p>Ready to contribute? Here's how to set up <code class="docutils literal">planetarypy.github.io</code> for local development.</p>
+<ol class="arabic">
+<li><p>Fork the <code class="docutils literal">planetarypy.github.io</code> repo on GitHub.</p></li>
+<li>
+<p>Clone your fork locally:</p>
+<pre class="literal-block">$ git clone git@github.com:your_name_here/planetarypy.github.io.git</pre>
+</li>
+<li>
+<p>Make sure to also get the <code class="docutils literal">src</code> branch:</p>
+<pre class="literal-block">$ git branch -f src origin/src
+$ git checkout src</pre>
+</li>
+</ol>
+<ol class="arabic" start="3">
+<li>
+<p>Install Nikola, doing so via conda is the easiest:</p>
+<pre class="literal-block">$ conda create --name nikola
+$ conda activate nikola
+$ conda install nikola</pre>
+</li>
+<li><p>Make your changes and commits on your <code class="docutils literal">src</code> branch, test locally with
+<code class="docutils literal">nikola build</code> and <code class="docutils literal">nikola serve</code></p></li>
+<li><p>When you're done making changes, check that your changes actually do build
+with <code class="docutils literal">nikola build</code> and <code class="docutils literal">nikola check <span class="pre">-rfl</span></code>.  You may get errors related to
+links generated from the registry in packages/index.html.  Package authors
+sometimes provide short, readable URLs that get redirected to different URLs,
+and these errors can be ignored.</p></li>
+<li>
+<p>Commit your changes and push to your forked branch on GitHub:</p>
+<pre class="literal-block">$ git add .
+$ git commit -m "Your detailed description of your changes."
+$ git push</pre>
+</li>
+<li><p>Submit a <a class="reference external" href="https://github.com/planetarypy/planetarypy.github.io/pulls">pull request</a></p></li>
+</ol>
+</div>
+<div class="section" id="pull-request-guidelines">
+<h2>Pull Request Guidelines</h2>
+<p>Before you submit a pull request, check that it passes
+<code class="docutils literal">nikola build</code> and <code class="docutils literal">nikola check</code>.</p>
+</div>
+<div class="section" id="what-to-expect">
+<h2>What to expect</h2>
+<p>We want to keep the webpage moving forward, and you should expect
+activity on your PR within a week or so (we're all volunteers).</p>
+</div>
+<div class="section" id="rules-for-merging-pull-requests">
+<h2>Rules for Merging Pull Requests</h2>
+<p>Any change to resources in this repository must be through pull
+requests (PRs). This applies to all changes to documentation, code,
+binary files, etc. Even long term committers must use pull requests.</p>
+<p>In general, the submitter of a PR is responsible for making changes
+to the PR. Any changes to the PR can be suggested by others in the
+PR thread (or via PRs to the PR), but changes to the primary PR
+should be made by the PR author (unless they indicate otherwise in
+their comments). In order to merge a PR, it must satisfy these conditions:</p>
+<ol class="arabic simple">
+<li><p>Have been open for 24 hours.</p></li>
+<li><p>Have one approval.</p></li>
+<li><p>If the PR has been open for 48 hours without approval or comment, then it
+may be merged without any approvals.</p></li>
+</ol>
+<p><strong>Unless</strong> that file is the <code class="docutils literal">data/registry.json</code> file.  That is
+the cannonical list of PlanetaryPy packages, and PRs to that file—and
+that file only—have these more restrictive requirements:</p>
+<ol class="arabic simple">
+<li><p>Have been open for 24 hours.</p></li>
+<li><p>Have two approvals.</p></li>
+</ol>
+<p>Pull requests should sit for at least 24 hours to ensure that
+contributors in other timezones have time to review. Consideration
+should also be given to weekends and other holiday periods to ensure
+active committers all have reasonable time to become involved in
+the discussion and review process if they wish.</p>
+<p>In order to encourage involvement and review, we encourage at least
+one explicit approval from committers that are not the PR author.</p>
+<p>However, in order to keep development moving along with our low number of
+active contributors, if a PR has been open for two days without comment, then
+it could be committed without an approval.</p>
+<p>The default for each contribution is that it is accepted once no
+committer has an objection, and the above requirements are
+satisfied.</p>
+<p>In the case of an objection being raised in a pull request by another
+committer, all involved committers should seek to arrive at a
+consensus by way of addressing concerns being expressed by discussion,
+compromise on the proposed change, or withdrawal of the proposed
+change.</p>
+<p>If a contribution is controversial and committers cannot agree about
+how to get it merged or if it should merge, then the developers
+will escalate the matter to the PlanetaryPy TC for guidance.  It
+is expected that only a small minority of issues be brought to the
+PlanetaryPy TC for resolution and that discussion and compromise
+among committers be the default resolution mechanism.</p>
+<p>Exceptions to the above are minor typo fixes or cosmetic changes
+that don't alter the meaning of a document. Those edits can be made
+via a PR and the requirement for being open 24 h is waived in this
+case.</p>
+</div>
+<div class="section" id="planetarypy-github-io-people">
+<h2>planetarypy.github.io People</h2>
+<ul class="simple">
+<li><p>A <strong>Contributor</strong> is any individual creating or commenting
+on an issue or pull request.</p></li>
+<li><p>A <strong>Committer</strong> is a subset of contributors who have been
+given write access to the repository.</p></li>
+</ul>
+<p>Those individuals that are authorized by the PlanetaryPy TC
+can become Committers.  Individuals who wish to be considered for
+commit-access may create an Issue or contact an existing Committer
+directly.</p>
+<p>Committers are expected to follow this policy and continue to send
+pull requests, go through proper review, etc.</p>
+</div>
+</div>
+    </div>
+    
+
+</article><!--End of body content--><footer id="footer"><div class="small">Contents © 2021
+ <a href="../technical-committee/">PlanetaryPy Technical Committee</a>
+ - Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+</div>
+ <div class="small pb-3">
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative
+ Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-sa/4.0/80x15.png"></a> This work
+ is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+ Attribution-ShareAlike 4.0 International License</a>.</div>
+ <div class="small" style="text-align: center">
+<a href="https://github.com/planetarypy/planetarypy.github.io/issues/new">Issues
+ with the website?</a> - <a href=".">Contribute to the
+ site</a>
+</div>
+ <div style="text-align: right">
+<a href="../archive.html">News Archive</a>
+  - <a href="../rss.xml">RSS feed</a>
+</div>
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

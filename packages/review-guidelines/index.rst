@@ -62,7 +62,8 @@ is accepted after its first review:
 
 The document also includes ``monospaced keywords`` for the categories
 and levels.  These are the keywords and values to be used in the
-`registry.json <https://github.com/planetarypy/planetarypy.github.io/data/registry.json>`_
+`registry.json 
+<https://github.com/planetarypy/planetarypy.github.io/blob/src/data/registry.json>`_
 file that is the canonical source for affiliated package information.
 
 The categories in which we assess the package are the following:
