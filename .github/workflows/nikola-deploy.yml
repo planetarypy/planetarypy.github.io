@@ -5,6 +5,10 @@ on:
 
 jobs:
   nikola_build:
+    # Only do the whole deploy if this is src branch on the main repo.
+    # This just prevents the action from running when people are working
+    # on private forks.
+    if: github.repository == 'planetarypy/planetarypy.github.io'
     runs-on: ubuntu-latest
     name: 'Deploy Nikola to GitHub Pages'
     steps:
