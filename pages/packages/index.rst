@@ -49,7 +49,7 @@ These are the PlanetaryPy Affiliated Packages:
 <td>${pack["name"]}</td>
 <td><p><a href="${pack["home_url"]}" class="btn btn-primary">Website</a>
        <a href="${pack["repo_url"]}" class="btn btn-secondary">Repository</a>
-       <a href="https://pypi.org/project/${pack["pypi_name"]}">
+       <a href="https://pypi.org/project/${pack["pypi_name"]}/">
          <img src="https://pypi.org/static/images/logo-small.6eef541e.svg"
          alt="PyPI" />
     </p>
