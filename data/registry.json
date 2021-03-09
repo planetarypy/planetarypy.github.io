@@ -30,6 +30,23 @@
 		"pythonversion": "3.6"
 	},
     "packages": [
+    	{
+	    "name": "Craterstats",
+	    "maintainer": "Greg Michael",
+	    "home_url": "https://github.com/ggmichael/craterstats",
+	    "repo_url": "https://github.com/ggmichael/craterstats",
+	    "pypi_name": "",
+	    "description": "A tool to analyse and plot crater count data for planetary surface dating",
+	    "review": {
+		"functionality": "To be filled out by the reviewer",
+		"ecointegration": "To be filled out by the reviewer",
+		"documentation": "To be filled out by the reviewer",
+		"testing": "To be filled out by the reviewer",
+		"devstatus": "To be filled out by the reviewer",
+		"pythonver": "To be filled out by the reviewer",
+		"last-updated": "To be filled out by the reviewer"
+	    }
+	},
         {
             "name": "SpiceyPy",
             "maintainer": "annex@jhu.edu",
