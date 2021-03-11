@@ -20,8 +20,16 @@ These are the PlanetaryPy Affiliated Packages:
 <%def name="getshield(category, status)">
 <%
     tcase = status.title()
-    color = post.data("criteria")[category][status]
-
+    try:
+        color = post.data("criteria")[category][status]
+    except KeyError as err:
+        if status.casefold() == "to be filled out by the reviewer":
+            color = "black"
+        else:
+            raise ValueError(
+                f"The value '{status}' isn't allowable for category '{category}' "
+                f"in registry.json."
+            ) from err
 %>
 <img src="https://img.shields.io/badge/${tcase | h}-${color}.svg" art=${tcase}">
 </%def>
@@ -29,10 +37,19 @@ These are the PlanetaryPy Affiliated Packages:
 <%def name="getver(ver)">
 <%
     import math
-    if float(ver) >= float(post.data("criteria")["pythonversion"]):
-        status = f"{ver}-brightgreen"
-    else:
-        status = f"{ver}-red"
+    try:
+        if float(ver) >= float(post.data("criteria")["pythonver"]):
+            status = f"{ver}-brightgreen"
+        else:
+            status = f"{ver}-red"
+    except ValueError as err:
+        if ver.casefold() == "to be filled out by the reviewer":
+            status = f"{ver}-black"
+        else:
+            raise ValueError(
+                f"The value '{ver}' isn't allowable for category 'pythonver' "
+                f"in registry.json."
+            ) from err
 %>
 <img src="https://img.shields.io/badge/${status}.svg" alt="${ver}">
 </%def>

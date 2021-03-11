@@ -299,7 +299,7 @@ included some comments when the score is not green.
 <tr><td><b>Python version compatibility</b></td><td>
 <a href="https://planetarypy.github.com/packages/review-guidelines#pythonver">
 ${getshield("Incompatible", "red")}
-${getshield(post.data("criteria")["pythonversion"], "brightgreen")}
+${getshield(post.data("criteria")["pythonver"], "brightgreen")}
 </a></td></tr>
 
 <tr><td colspan=2><i>No further comments</i></td></tr>
