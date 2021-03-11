@@ -31,7 +31,7 @@ These are the PlanetaryPy Affiliated Packages:
                 f"in registry.json."
             ) from err
 %>
-<img src="https://img.shields.io/badge/${tcase | h}-${color}.svg" art=${tcase}">
+<img src="https://img.shields.io/badge/${tcase | h}-${color}.svg" alt=${tcase}">
 </%def>
 
 <%def name="getver(ver)">

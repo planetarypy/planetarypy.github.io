@@ -82,7 +82,7 @@ The categories in which we assess the package are the following:
     color = post.data("criteria")[category][status]
 
 %>
-<img src="https://img.shields.io/badge/${tcase | h}-${color}.svg" art=${tcase}">
+<img src="https://img.shields.io/badge/${tcase | h}-${color}.svg" alt=${tcase}">
 </%def>
 
 
