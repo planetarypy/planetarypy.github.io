@@ -27,7 +27,7 @@
     	    "functional but unmaintained": "orange",
     	    "nonfunctional": "red"
 		},
-		"pythonversion": "3.6"
+		"pythonver": "3.6"
 	},
     "packages": [
         {

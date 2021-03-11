@@ -264,20 +264,20 @@ recently-opened issues have some kind of reply from maintainers.</td>
 
 <p>
 The PlanetaryPy Project requires that packages be compatible with
-Python version ${post.data("criteria")["pythonversion"]}.  Being
+Python version ${post.data("criteria")["pythonver"]}.  Being
 compatible with later versions of Python is great, too, but must
-be compatible with at least ${post.data("criteria")["pythonversion"]}.
+be compatible with at least ${post.data("criteria")["pythonver"]}.
 </p>
 
 <table class="table">
 <tr>
 <td class="w-25 align-center"><img src="https://img.shields.io/badge/Incompatible-red.svg" alt="Incompatible"></td>
-<td>Not compatible with Python ${post.data("criteria")["pythonversion"]}.</td>
+<td>Not compatible with Python ${post.data("criteria")["pythonver"]}.</td>
 </tr>
 <tr>
 <tr>
-<td class="w-25 align-center"><img src="https://img.shields.io/badge/${post.data("criteria")["pythonversion"]}-brightgreen.svg" alt="${post.data("criteria")["pythonversion"]}"></td>
-<td>Compatible with Python ${post.data("criteria")["pythonversion"]}.</td>
+<td class="w-25 align-center"><img src="https://img.shields.io/badge/${post.data("criteria")["pythonver"]}-brightgreen.svg" alt="${post.data("criteria")["pythonver"]}"></td>
+<td>Compatible with Python ${post.data("criteria")["pythonver"]}.</td>
 </tr>
 </table>
 {{% /template %}}
