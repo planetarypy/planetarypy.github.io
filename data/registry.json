@@ -30,14 +30,14 @@
 		"pythonver": "3.6"
 	},
     "packages": [
-	{
+		{
             "name": "kalasiris",
             "maintainer": "rbeyer@seti.org",
     	    "home_url": "https://kalasiris.readthedocs.io",
-            "repo_url": "ttps://github.com/rbeyer/kalasiris",
+            "repo_url": "https://github.com/rbeyer/kalasiris",
             "pypi_name": "kalasiris",
             "description": "The kalasiris library wraps functions and functionality for ISIS.",
-	    "image": null,
+	    	"image": null,
             "review": {
                 "functionality": "General package",
                 "ecointegration": "Good",
