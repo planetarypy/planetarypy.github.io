@@ -36,3 +36,8 @@ you'll find all of them welcoming of new contributions.
 If you're a Python developer with an existing package that you think
 others would benefit from, whether you've already released it or not,
 please consider `applying <link://slug/review-process>`_ to be an Affiliated Package.
+
+For more information about the PlanetaryPy Project, Michael Aye gave a 
+`talk <https://www.youtube.com/watch?v=GwvRkXpmCXc>`_ and the `slides
+<https://docs.google.com/presentation/d/1H-tGxfkSHF8vS-_rt5DQHVFmBYkJNaJW6yElUe9s2Ok/edit?usp=sharing>`_
+are available.
