@@ -209,14 +209,15 @@ category most of the code is not covered).</td>
 </tr>
 <tr>
 <td class="w-25 align-center">${getshield("testing", "partial")}</td>
-<td>A reasonable fraction of the code is covered by tests, but still
+<td>A reasonable fraction of the code is covered by tests (approximately 50%),
+but still
 some parts of the code that are missing tests. To be in this category,
 packages should use a standard framework (unittest, pytest, nose, etc.) and
 be runnable with a single command.</td>
 </tr>
 <tr>
 <td class="w-25 align-center">${getshield("testing", "good")}</td>
-<td>Test coverage is very high (for example 90% or more), tests use
+<td>Test coverage is very high (approximately 90% or more), tests use
 a standard framework (unittest, pytest, nose, etc.) and are easy to run and
 continuous integration is used to ensure package stability over
 time.</td>
