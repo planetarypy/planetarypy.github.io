@@ -14,6 +14,11 @@ meant as a record of the PlanetaryPy procedure and eventually we'll
 have more detailed instructions on proposing an affiliated package,
 like `Astropy does <https://www.astropy.org/affiliated/index.html>`_.
 
+If this is your first time submitting a pull request on GitHub, 
+consider "How to Contribute to an Open Source Project on GitHub" `video guide 
+<https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github`_ 
+(~40 mins) or practice your first pull request on the `plutopy 
+<https://github.com/cjtu/plutopy>`_ repository (~10 mins).
 
 Proposing an affiliated package
 ===============================
