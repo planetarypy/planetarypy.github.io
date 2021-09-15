@@ -37,6 +37,12 @@ If you're a Python developer with an existing package that you think
 others would benefit from, whether you've already released it or not,
 please consider `applying <link://slug/review-process>`_ to be an Affiliated Package.
 
+If you're new to open source collaboration on GitHub, we recommend the "How to 
+Contribute to an Open Source Project on GitHub" `video guide 
+<https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github>`_
+(~40 mins) or practice your first pull request on the `plutopy 
+<https://github.com/cjtu/plutopy>`_ repository (~10 mins).
+
 For more information about the PlanetaryPy Project, Michael Aye gave a 
 `talk <https://www.youtube.com/watch?v=GwvRkXpmCXc>`_ and the `slides
 <https://docs.google.com/presentation/d/1H-tGxfkSHF8vS-_rt5DQHVFmBYkJNaJW6yElUe9s2Ok/edit?usp=sharing>`_
