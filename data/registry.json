@@ -30,6 +30,24 @@
 		"pythonver": "3.6"
 	},
     "packages": [
+	    
+	    	{
+	    "name": "pdr",
+	    "maintainer": "sierra@millionconcepts.com",
+	    "home_url": "https://pdr.readthedocs.io",
+	    "repo_url": "https://github.com/MillionConcepts/pdr",
+	    "pypi_name": "pdr",
+	    "description": "pdr, the Planetary Data Reader, is a tool which provides a single command -- read('/path/to/file') -- for ingesting all common planetary data types.",
+	    "review": {
+	        "functionality": "To be filled out by the reviewer",
+	        "ecointegration": "To be filled out by the reviewer",
+	        "documentation": "To be filled out by the reviewer",
+	        "testing": "To be filled out by the reviewer",
+	        "devstatus": "To be filled out by the reviewer",
+	        "pythonver": "To be filled out by the reviewer",
+	        "last-updated": "To be filled out by the reviewer"
+    		}
+	},
 		{
             "name": "kalasiris",
             "maintainer": "rbeyer@seti.org",
