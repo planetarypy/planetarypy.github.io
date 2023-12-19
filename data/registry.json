@@ -27,7 +27,8 @@
     	    "functional but unmaintained": "orange",
     	    "nonfunctional": "red"
 		},
-		"pythonversion": "3.6"
+		"pythonver": "3.9",
+		"pythonmaxver": "3.11"
 	},
     "packages": [
     	{
@@ -47,6 +48,24 @@
 		"last-updated": "To be filled out by the reviewer"
 	    }
 	},
+		{
+            "name": "kalasiris",
+            "maintainer": "rbeyer@seti.org",
+    	    "home_url": "https://kalasiris.readthedocs.io",
+            "repo_url": "https://github.com/rbeyer/kalasiris",
+            "pypi_name": "kalasiris",
+            "description": "The kalasiris library wraps functions and functionality for ISIS.",
+	    	"image": null,
+            "review": {
+                "functionality": "General package",
+                "ecointegration": "Good",
+                "documentation": "Good",
+                "testing": "Good",
+                "devstatus": "Good",
+                "pythonver": "3.8",
+                "last-updated": "2021-06-02"
+            }
+        },
         {
             "name": "SpiceyPy",
             "maintainer": "annex@jhu.edu",
@@ -61,7 +80,7 @@
                 "documentation": "Good",
                 "testing": "Good",
                 "devstatus": "Good",
-                "pythonver": "3.6",
+                "pythonver": "3.9",
                 "last-updated": "2021-01-27"
             }
         },
@@ -79,7 +98,7 @@
                 "documentation": "Good",
                 "testing": "Good",
                 "devstatus": "Good",
-                "pythonver": "3.6",
+                "pythonver": "3.9",
                 "last-updated": "2021-01-22"
             }
         }

@@ -20,19 +20,41 @@ These are the PlanetaryPy Affiliated Packages:
 <%def name="getshield(category, status)">
 <%
     tcase = status.title()
-    color = post.data("criteria")[category][status]
-
+    try:
+        color = post.data("criteria")[category][status]
+    except KeyError as err:
+        if status.casefold() == "to be filled out by the reviewer":
+            color = "black"
+        else:
+            raise ValueError(
+                f"The value '{status}' isn't allowable for category '{category}' "
+                f"in registry.json."
+            ) from err
 %>
-<img src="https://img.shields.io/badge/${tcase | h}-${color}.svg" art=${tcase}">
+<img src="https://img.shields.io/badge/${tcase | h}-${color}.svg" alt=${tcase}">
 </%def>
 
 <%def name="getver(ver)">
 <%
     import math
-    if float(ver) >= float(post.data("criteria")["pythonversion"]):
-        status = f"{ver}-brightgreen"
-    else:
-        status = f"{ver}-red"
+    verinfo = tuple(map(int, ver.split(".")))
+    pyver = tuple(map(int, post.data("criteria")["pythonver"].split(".")))
+    pymaxver = tuple(map(int, post.data("criteria")["pythonmaxver"].split(".")))
+    try:
+        if verinfo == pyver:
+            status = f"{ver}-brightgreen"
+        elif pyver < verinfo <= pymaxver:
+            status = f"{ver}-orange"
+        else:
+            status = f"{ver}-red"
+    except ValueError as err:
+        if ver.casefold() == "to be filled out by the reviewer":
+            status = f"{ver}-black"
+        else:
+            raise ValueError(
+                f"The value '{ver}' isn't allowable for category 'pythonver' "
+                f"in registry.json."
+            ) from err
 %>
 <img src="https://img.shields.io/badge/${status}.svg" alt="${ver}">
 </%def>
@@ -50,7 +72,7 @@ These are the PlanetaryPy Affiliated Packages:
 <td><p><a href="${pack["home_url"]}" class="btn btn-primary">Website</a>
        <a href="${pack["repo_url"]}" class="btn btn-secondary">Repository</a>
        <a href="https://pypi.org/project/${pack["pypi_name"]}/">
-         <img src="https://pypi.org/static/images/logo-small.6eef541e.svg"
+         <img src="/images/pypi-logo-small.svg" height="30"
          alt="PyPI" />
     </p>
     <p>${pack["description"]}</p>

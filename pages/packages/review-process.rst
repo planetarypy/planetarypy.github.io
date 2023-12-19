@@ -216,6 +216,7 @@ Template email with review instructions
 
    <p>Thanks!<br />
    {coordinator name}</p>
+   </div>
 
 
 Template review markdown
@@ -234,7 +235,7 @@ only the text that applies should remain, altered to your liking.
     from urllib.parse import quote
     tcase = status.title()
     encoded = quote(tcase)
-%><img src="https://img.shields.io/badge/${encoded}-${color}.alt" alt=${tcase}"></%def>
+%><img src="https://img.shields.io/badge/${encoded}-${color}.svg" alt=${tcase}"></%def>
 
 <pre class="text-monospace">
 This package has been reviewed for inclusion in the PlanetaryPy
@@ -299,7 +300,8 @@ included some comments when the score is not green.
 <tr><td><b>Python version compatibility</b></td><td>
 <a href="https://planetarypy.github.com/packages/review-guidelines#pythonver">
 ${getshield("Incompatible", "red")}
-${getshield(post.data("criteria")["pythonversion"], "brightgreen")}
+<img src="https://img.shields.io/badge/%3E${post.data("criteria")["pythonver"]}%20%7C%20%3C%3D${post.data("criteria")["pythonmaxver"]}-orange.svg" alt="<${post.data("criteria")["pythonver"]} or >= ${post.data("criteria")["pythonmaxver"]}">
+${getshield(post.data("criteria")["pythonver"], "brightgreen")}
 </a></td></tr>
 
 <tr><td colspan=2><i>No further comments</i></td></tr>

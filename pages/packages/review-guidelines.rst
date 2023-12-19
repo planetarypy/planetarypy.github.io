@@ -82,7 +82,7 @@ The categories in which we assess the package are the following:
     color = post.data("criteria")[category][status]
 
 %>
-<img src="https://img.shields.io/badge/${tcase | h}-${color}.svg" art=${tcase}">
+<img src="https://img.shields.io/badge/${tcase | h}-${color}.svg" alt=${tcase}">
 </%def>
 
 
@@ -209,14 +209,15 @@ category most of the code is not covered).</td>
 </tr>
 <tr>
 <td class="w-25 align-center">${getshield("testing", "partial")}</td>
-<td>A reasonable fraction of the code is covered by tests, but still
+<td>A reasonable fraction of the code is covered by tests (approximately 50%),
+but still
 some parts of the code that are missing tests. To be in this category,
 packages should use a standard framework (unittest, pytest, nose, etc.) and
 be runnable with a single command.</td>
 </tr>
 <tr>
 <td class="w-25 align-center">${getshield("testing", "good")}</td>
-<td>Test coverage is very high (for example 90% or more), tests use
+<td>Test coverage is very high (approximately 90% or more), tests use
 a standard framework (unittest, pytest, nose, etc.) and are easy to run and
 continuous integration is used to ensure package stability over
 time.</td>
@@ -263,21 +264,26 @@ recently-opened issues have some kind of reply from maintainers.</td>
 <h2 id="pythonver">Python version compatibility (<code>pythonver</code>)</h2>
 
 <p>
-The PlanetaryPy Project requires that packages be compatible with
-Python version ${post.data("criteria")["pythonversion"]}.  Being
+The PlanetaryPy Project encourages that packages be compatible with
+Python version ${post.data("criteria")["pythonver"]}.  Being
 compatible with later versions of Python is great, too, but must
-be compatible with at least ${post.data("criteria")["pythonversion"]}.
+be compatible with at least ${post.data("criteria")["pythonver"]} to get a green
+rating, but compatibility with Python versions greater than ${post.data("criteria")["pythonver"]} and
+less than or equal to ${post.data("criteria")["pythonmaxver"]} will yield an orange rating.
 </p>
 
 <table class="table">
 <tr>
 <td class="w-25 align-center"><img src="https://img.shields.io/badge/Incompatible-red.svg" alt="Incompatible"></td>
-<td>Not compatible with Python ${post.data("criteria")["pythonversion"]}.</td>
+<td>Not compatible with Python versions between ${post.data("criteria")["pythonver"]} and ${post.data("criteria")["pythonmaxver"]}.</td>
 </tr>
 <tr>
+<td class="w-25 align-center"><img src="https://img.shields.io/badge/%3E${post.data("criteria")["pythonver"]}%20%7C%20%3C%3D${post.data("criteria")["pythonmaxver"]}-orange.svg" alt="<${post.data("criteria")["pythonver"]} or >= ${post.data("criteria")["pythonmaxver"]}"></td>
+<td>Compatible with Python versions greater than ${post.data("criteria")["pythonver"]} and less than or equal to ${post.data("criteria")["pythonmaxver"]}.</td>
+</tr>
 <tr>
-<td class="w-25 align-center"><img src="https://img.shields.io/badge/${post.data("criteria")["pythonversion"]}-brightgreen.svg" alt="${post.data("criteria")["pythonversion"]}"></td>
-<td>Compatible with Python ${post.data("criteria")["pythonversion"]}.</td>
+<td class="w-25 align-center"><img src="https://img.shields.io/badge/${post.data("criteria")["pythonver"]}-brightgreen.svg" alt="${post.data("criteria")["pythonver"]}"></td>
+<td>Compatible with Python ${post.data("criteria")["pythonver"]}.</td>
 </tr>
 </table>
 {{% /template %}}
