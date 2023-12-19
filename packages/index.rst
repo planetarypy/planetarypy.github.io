@@ -37,9 +37,14 @@ These are the PlanetaryPy Affiliated Packages:
 <%def name="getver(ver)">
 <%
     import math
+    verinfo = tuple(map(int, ver.split(".")))
+    pyver = tuple(map(int, post.data("criteria")["pythonver"].split(".")))
+    pymaxver = tuple(map(int, post.data("criteria")["pythonmaxver"].split(".")))
     try:
-        if float(ver) >= float(post.data("criteria")["pythonver"]):
+        if verinfo == pyver:
             status = f"{ver}-brightgreen"
+        elif pyver < verinfo <= pymaxver:
+            status = f"{ver}-orange"
         else:
             status = f"{ver}-red"
     except ValueError as err:
