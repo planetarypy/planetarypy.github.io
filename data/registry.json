@@ -27,7 +27,8 @@
     	    "functional but unmaintained": "orange",
     	    "nonfunctional": "red"
 		},
-		"pythonver": "3.6"
+		"pythonver": "3.9",
+		"pythonmaxver": "3.11"
 	},
     "packages": [
 		{
@@ -44,7 +45,7 @@
                 "documentation": "Good",
                 "testing": "Good",
                 "devstatus": "Good",
-                "pythonver": "3.6",
+                "pythonver": "3.8",
                 "last-updated": "2021-06-02"
             }
         },
@@ -62,7 +63,7 @@
                 "documentation": "Good",
                 "testing": "Good",
                 "devstatus": "Good",
-                "pythonver": "3.6",
+                "pythonver": "3.9",
                 "last-updated": "2021-01-27"
             }
         },
@@ -80,7 +81,7 @@
                 "documentation": "Good",
                 "testing": "Good",
                 "devstatus": "Good",
-                "pythonver": "3.6",
+                "pythonver": "3.9",
                 "last-updated": "2021-01-22"
             }
         }
