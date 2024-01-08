@@ -39,7 +39,7 @@
 	    "pypi_name": "",
 	    "description": "A tool to analyse and plot crater count data for planetary surface dating",
 	    "review": {
-		    "functionality": "Gengeral package",
+		    "functionality": "General package",
 		    "ecointegration": "Good",
 		    "documentation": "Partial",
 		    "testing": "Partial",
