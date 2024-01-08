@@ -39,15 +39,33 @@
 	    "pypi_name": "",
 	    "description": "A tool to analyse and plot crater count data for planetary surface dating",
 	    "review": {
-		"functionality": "To be filled out by the reviewer",
-		"ecointegration": "To be filled out by the reviewer",
-		"documentation": "To be filled out by the reviewer",
-		"testing": "To be filled out by the reviewer",
-		"devstatus": "To be filled out by the reviewer",
-		"pythonver": "To be filled out by the reviewer",
-		"last-updated": "To be filled out by the reviewer"
-	    }
-	},
+		    "functionality": "Gengeral package",
+		    "ecointegration": "Good",
+		    "documentation": "Partial",
+		    "testing": "Partial",
+		    "devstatus": "Functional but low activity",
+		    "pythonver": "3.9",
+		    "last-updated": "2024-01-08"
+      }
+    },
+    {
+	    "name": "pdr",
+	    "maintainer": "sierra@millionconcepts.com",
+	    "home_url": "https://pdr.readthedocs.io",
+	    "repo_url": "https://github.com/MillionConcepts/pdr",
+	    "pypi_name": "pdr",
+	    "description": "pdr, the Planetary Data Reader, is a tool which provides a single command -- read('/path/to/file') -- for ingesting all common planetary data types.",
+	    "image": null,
+	    "review": {
+                "functionality": "General package",
+                "ecointegration": "Good",
+                "documentation": "Good",
+                "testing": "Good",
+                "devstatus": "Good",
+                "pythonver": "3.9",
+                "last-updated": "2023-12-19"
+    		}
+    },
 		{
             "name": "kalasiris",
             "maintainer": "rbeyer@seti.org",
@@ -62,8 +80,8 @@
                 "documentation": "Good",
                 "testing": "Good",
                 "devstatus": "Good",
-                "pythonver": "3.8",
-                "last-updated": "2021-06-02"
+                "pythonver": "3.9",
+                "last-updated": "2023-12-27"
             }
         },
         {
