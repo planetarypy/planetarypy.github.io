@@ -31,8 +31,24 @@
 		"pythonmaxver": "3.11"
 	},
     "packages": [
-	    
-	    	{
+    	{
+	    "name": "Craterstats",
+	    "maintainer": "Greg Michael",
+	    "home_url": "https://github.com/ggmichael/craterstats",
+	    "repo_url": "https://github.com/ggmichael/craterstats",
+	    "pypi_name": "",
+	    "description": "A tool to analyse and plot crater count data for planetary surface dating",
+	    "review": {
+		    "functionality": "General package",
+		    "ecointegration": "Good",
+		    "documentation": "Partial",
+		    "testing": "Partial",
+		    "devstatus": "Functional but low activity",
+		    "pythonver": "3.9",
+		    "last-updated": "2024-01-08"
+      }
+    },
+    {
 	    "name": "pdr",
 	    "maintainer": "sierra@millionconcepts.com",
 	    "home_url": "https://pdr.readthedocs.io",
@@ -49,7 +65,7 @@
                 "pythonver": "3.9",
                 "last-updated": "2023-12-19"
     		}
-	},
+    },
 		{
             "name": "kalasiris",
             "maintainer": "rbeyer@seti.org",
